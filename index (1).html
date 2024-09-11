@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="admin.html">Admin Login</a>
+    </div>
+    <div class="container">
+        <h1>Welcome to the File Download Center</h1>
+        <form id="sectionForm">
+            <label for="section">Choose a section:</label>
+            <select id="section" name="section" required>
+                <option value="bait.html">BAIT Section</option>
+                <option value="tic.html">TIC Section</option>
+            </select>
+            <button type="submit">Go to Section</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
