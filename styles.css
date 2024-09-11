@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafc;
+    color: #444;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #34495e;
+    overflow: hidden;
+    padding: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #2c3e50;
+}
+
+/* Forms and Inputs */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="password"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ced6e0;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    background-color: #f4f6f7;
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #2980b9;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1f618d;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ecf0f1;
+    text-align: left;
+}
+
+th {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f4f6f7;
+}
+
+/* Search Bar and Options */
+.search-bar {
+    margin: 20px 0;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+.clear-divider {
+    height: 20px;
+    background-color: #f9fafc;
+}
+
+/* Background Colors for Different Pages */
+.home-page {
+    background-color: #e8f8f5;
+}
+
+.admin-page {
+    background-color: #ffebcd;
+}
+
+.bait-page {
+    background-color: #f5eef8;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Modal Styling */
+#modifyFileModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+#modifyFileModal div {
+    display: flex;
+    flex-direction: column;
+}
+
+#modifyFileModal button {
+    margin-top: 10px;
+}
